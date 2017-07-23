@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2rem;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    max-width: 68.750rem;
+    margin: auto;
+}
+
+.gallery-image {
+    width: 100%;
+}
+
+@media (min-width: 37.500rem) {
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 56.250rem) {
+    .gallery-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
